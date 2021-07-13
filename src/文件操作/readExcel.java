@@ -10,19 +10,22 @@ import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.ArrayList;
 
-public class excel {
+/**
+ * 读取excel
+ */
+public class readExcel {
 
 
     static int row = 0;
     static int column = 0;
 
-    public static ArrayList readdata(String path) throws Exception// 读取字符串数据
+    public static ArrayList readData(String path) throws Exception// 读取字符串数据
 
     {
 
-        XSSFWorkbook workbook;
-        XSSFSheet sheet;
-        XSSFCell cell;
+        XSSFWorkbook workbook;//  Excel的文档对象
+        XSSFSheet sheet;//Excel的表单
+        XSSFCell cell; //Excel的格子单元
         ArrayList<ArrayList<String>> xlist = new ArrayList();
         ArrayList list = new ArrayList<>();
 
