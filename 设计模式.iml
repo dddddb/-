@@ -7,5 +7,44 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://D:/Program Files (x86)2/poi-5.0.0" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="file://D:/Program Files (x86)2/poi-5.0.0/docs/apidocs/dev" />
+        </JAVADOC>
+        <SOURCES />
+        <jarDirectory url="file://D:/Program Files (x86)2/poi-5.0.0" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Program Files (x86)2/poi-5.0.0/ooxml-lib/xmlbeans-4.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Program Files (x86)2/poi-5.0.0/ooxml-lib/commons-compress-1.20.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Program Files (x86)2/poi-5.0.0/lib/commons-collections4-4.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
