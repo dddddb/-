@@ -1,9 +1,5 @@
 package 工厂模式.工厂方法模式;
 
-import 工厂模式.简单工厂模式.MathOperation;
-
-import java.util.Optional;
-
 public class test {
 
     static MathFactoryInterface getFactory(String operator){
@@ -17,13 +13,12 @@ public class test {
         }else if("divide".equals(operator)){
             result = new DivideFactory();
         }
-        return Optional.ofNullable(result).orElseThrow(() -> new IllegalArgumentException("未知的操作"));
+        return result;
     }
     public static void main(String[] args) {
         MathFactoryInterface factory = getFactory("add");
-        MathOperation operation = factory.getOperation().orElseThrow(() ->
-                new IllegalArgumentException("未知的操作"));
-        double result = operation.apply(2,2);
+
+        double result = factory.getOperation().apply(2,2);
         System.out.println(result);
 
     }

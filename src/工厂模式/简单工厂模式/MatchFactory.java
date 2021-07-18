@@ -1,9 +1,7 @@
 package 工厂模式.简单工厂模式;
 
-import java.util.Optional;
-
 public class MatchFactory {
-    public static Optional<MathOperation> getOperation(String operator) {
+    public static MathOperation getOperation(String operator) {
         MathOperation result = null;
         if("add".equals(operator)){
             result = new AddOperation();
@@ -14,7 +12,7 @@ public class MatchFactory {
         }else if("divide".equals(operator)){
             result = new DivideOperation();
         }
-        return Optional.ofNullable(result);
+        return result;
     }
 
 }
